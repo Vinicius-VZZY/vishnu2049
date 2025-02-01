@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Vishnu2049</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <h1 class="neon-text"></h1>
     <nav>
       <ul>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#catalog">Produtos</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -26,18 +26,45 @@
           <img src="img/1.jpg" alt="Imagem 1">
           <img src="img/2.jpg" alt="Imagem 2">
           <img src="img/3.jpg" alt="Imagem 3">
-          <img src="img/4.jpg" alt="Imagem 4">
-          <img src="img/5.jpg" alt="Imagem 5">
         </div>
         <button id="prev" class="carousel-btn">⟵</button>
         <button id="next" class="carousel-btn">⟶</button>
       </div>
     </section>
+
+    <section id="catalog">
+      <h2>Prödücts</h2>
+      <div class="product-grid">
+        <div class="product" data-product="black">
+          <img src="img/mockup-camisa-preta.jpg" alt="Camisa Preta" class="product-thumb">
+          <p>Camisa Preta - Edição 01</p>
+        </div>
+        <div class="product" data-product="white">
+          <img src="img/mockup-camisa-branca.jpg" alt="Camisa Branca" class="product-thumb">
+          <p>Camisa Branca - Edição 01</p>
+        </div>
+      </div>
+    </section>
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <img id="popup-img" src="" alt="Produto" class="popup-img">
+        <h3 id="popup-title"></h3>
+        <p id="popup-desc"></p>
+        <div class="payment-options">
+          <h4>Pagamento via QR Code:</h4>
+          <img id="popup-qr" src="" alt="QR Code">
+          <p>Ou <a id="popup-link" href="#" target="_blank">clique aqui</a> para pagar pelo Mercado Pago.</p>
+        </div>
+      </div>
+    </div>    
   </main>
 
   <footer>
     <p>&copy; 2025 - TËCHNÖVÏSHNÜ</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
